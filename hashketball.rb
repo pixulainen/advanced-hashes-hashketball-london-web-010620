@@ -237,6 +237,7 @@ end
 def player_with_longest_name
   longest_name = []
   game_hash.values.each do |value|
+    binding.pry
     value[:players].each do |player|
       longest_name << player[:player_name]
     end
